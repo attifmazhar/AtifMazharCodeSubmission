@@ -75,7 +75,6 @@ class MainActivity : AppCompatActivity(), onItemClickListener {
   fun setObservable() {
 
     viewModel.user.observe(this) {
-      Log.e("atif", "atif test user data")
       // TODO (1 point): Use Glide to load images after getting the data from endpoints mentioned in RemoteDataSource
       it.picture?.medium?.let {
         binding.mainImage.loadImage(it)
