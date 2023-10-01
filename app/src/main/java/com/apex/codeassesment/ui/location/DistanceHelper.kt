@@ -11,7 +11,6 @@ class DistanceHelper {
         unit: Char
     ): Double {
         val theta = lon1 - lon2
-
         var dist =
             Math.sin(deg2rad(lat1)) * Math.sin(deg2rad(lat2)) + Math.cos(deg2rad(lat1)) * Math.cos(
                 deg2rad(lat2)
